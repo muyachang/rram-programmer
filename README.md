@@ -9,10 +9,13 @@ Welcome to rram-programmer, this repo provides all the necessary files in order 
 Normally when you are using rram-pyterminal, the evaluation board is in application mode. Therefore in Device Manager you would see it listed as one of the COM ports, as the figure shown below.
 ![Picture1](https://user-images.githubusercontent.com/4018299/143365986-056bc2bd-62e2-43ff-8779-b3cc35bf9882.png)
 
-If this is your first time updating the firmware, there's high chance that the board under DFU mode won't be detected properly as the figure below.
+If this is your first time updating the firmware, there's high chance that the board in DFU mode won't be detected properly as the figure below.
 ![Picture1](https://user-images.githubusercontent.com/4018299/143366692-d520119c-c946-4038-9270-5b355b631aa3.png)
 
-In such case, go to "atmel driver" folder, right click "atmel_usb_dfu.inf", and select "Install". This would install the required inf file so the system could detect the board under DFU mode properly. After this is done, press atmel reset button and the board should be detected properly as the figure below.
+In such case, go to "atmel driver" folder, right click "atmel_usb_dfu.inf", and select "Install", as the figure below. This would install the required inf file so the system could detect the board in DFU mode properly.
+<img width="668" alt="Picture1" src="https://user-images.githubusercontent.com/4018299/143367450-af7aaa10-96bd-4d06-9305-cb0cce7fff5b.png">
+
+After the driver is installed, press Atmel Reset button and the board in DFU mode should be detected properly as the figure below.
 ![Picture1](https://user-images.githubusercontent.com/4018299/143366974-4324c8b0-6b13-4c6f-abd8-c6df71e3e25d.png)
 
 ### Main Steps
@@ -20,15 +23,18 @@ In such case, go to "atmel driver" folder, right click "atmel_usb_dfu.inf", and 
 ![Picture1](https://user-images.githubusercontent.com/4018299/143366200-1b21984f-7edd-4920-9431-c1d54f066c49.png)
 
 #### Step 2: Switch from APP mode to DFU mode, the power LED would be on after this step.
-![Picture1](https://user-images.githubusercontent.com/4018299/143366339-c69582d0-e464-4348-84b1-e636c7a41c25.png)
+![Picture1](https://user-images.githubusercontent.com/4018299/143367980-86457aa8-8f2c-41f1-8228-d65134ba50fc.png)
 
-![Picture1](https://user-images.githubusercontent.com/4018299/143366405-aa279e68-e6a8-48f1-a4c0-ec2bb29e3adf.png)
-
-### Step 3: Launch "dfu_programmer.bat" and key in y/n depending on your need, if the board is properly detected, it should be similar to the figure below.
+### Step 3: Launch "dfu_programmer.bat" and key in 'y' or 'n' depending on your need, if the board is properly detected, it should be similar to the figure below.
 ![Picture1](https://user-images.githubusercontent.com/4018299/143366541-bbec3986-387d-4845-94d4-0b3bedbc0152.png)
 
+There are three groups throughout the script: "FLASH", "EEPROM", and "External Flash". Each with the explanation below:
+- FLASH: This firmware is for atmel atmega32u2 MCU, which controls the voltage regulator, DAC, external flash ... etc.
+- EEPROM: This is not a firmware, but rather some data that are the initial values for some settings, such as for voltage regulator the initial states and values for each voltages, initial values for the DAC outputs ... etc.
+- External Flash: This can be seperated into two categories: "ICSRL RRAM demo suite" and "Cortex M3 demo suite". "ICSRL RRAM demo suite" is essentially the firmware for [rram-pyterminal](https://github.com/muyachang/rram-pyterminal), and "Cortex M3 demo suite" is a set of firmwares that demonstrate basic functionalities of the ARM Cortex M3.
+
 ### Troubleshooting
-#### dfu-programmer showing "no device present"
+#### Problem 1: dfu-programmer showing "no device present"
 ![Picture1](https://user-images.githubusercontent.com/4018299/143367076-c21a5b4f-c580-4467-a8c4-951ff3b7d060.png)
 
 ##### Possible cause 1: The board is not in DFU mode
