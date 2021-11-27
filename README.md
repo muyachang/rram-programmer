@@ -22,13 +22,13 @@ After the driver is installed, press Atmel Reset button and the board in DFU mod
 #### Step 1: Turn off the evaluation board
 ![Picture1](https://user-images.githubusercontent.com/4018299/143366200-1b21984f-7edd-4920-9431-c1d54f066c49.png)
 
-#### Step 2: Switch from APP mode to DFU mode, the power LED would be on after this step.
-![Picture1](https://user-images.githubusercontent.com/4018299/143367980-86457aa8-8f2c-41f1-8228-d65134ba50fc.png)
+#### Step 2: Switch from APP mode to DFU mode and reset the Atmel MCU, the power LED would be on after this step.
+![Picture1](https://user-images.githubusercontent.com/4018299/143720957-882e2e4d-75b8-4611-98f1-36fea43fd9ed.png)
 
 #### Step 3: Launch "dfu_programmer.bat" and key in 'y' or 'n' depending on your need, if the board is properly detected, it should be similar to the figure below.
 ![Picture1](https://user-images.githubusercontent.com/4018299/143366541-bbec3986-387d-4845-94d4-0b3bedbc0152.png)
 
-#### Step 4: Switch back from DFU mode to APP mode and reset the Atmel
+#### Step 4: Switch back from DFU mode to APP mode and reset the Atmel MCU.
 ![Picture1](https://user-images.githubusercontent.com/4018299/143720880-0ca0e63b-d81d-408a-817c-5163b92f8960.png)
 
 There are three groups throughout the script: "FLASH", "EEPROM", and "External Flash". Each with the explanation below:
