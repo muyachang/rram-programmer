@@ -13,7 +13,7 @@ Welcome to rram-programmer, this repo provides all the necessary files in order 
 ![Picture1](https://user-images.githubusercontent.com/4018299/143366692-d520119c-c946-4038-9270-5b355b631aa3.png)
 
     In such case, go to "atmel driver" folder, right click "atmel_usb_dfu.inf", and select "Install", as the figure below. This would install the required inf file so the system could detect the board in DFU mode properly.
-<img width="668" alt="Picture1" src="https://user-images.githubusercontent.com/4018299/143367450-af7aaa10-96bd-4d06-9305-cb0cce7fff5b.png">
+![Picture1](https://user-images.githubusercontent.com/4018299/143367450-af7aaa10-96bd-4d06-9305-cb0cce7fff5b.png)
 
     After the driver is installed, press Atmel Reset button and the board in DFU mode should be detected properly as the figure below.
 ![Picture1](https://user-images.githubusercontent.com/4018299/143366974-4324c8b0-6b13-4c6f-abd8-c6df71e3e25d.png)
