@@ -41,8 +41,8 @@ Welcome to rram-programmer, this repo provides all the necessary files in order 
     ![Picture1](https://user-images.githubusercontent.com/4018299/143367076-c21a5b4f-c580-4467-a8c4-951ff3b7d060.png)
 
     - #### Possible cause 1: The board is not in DFU mode
-    - ##### Solution: Follow the main steps and enter the DFU mode
+      - ##### Solution: Follow the main steps and enter the DFU mode
 
     - #### Possible cause 2: Atmel Driver is not installed properly
-    - ##### Solution: Follow the pre-step and install the driver
+      - ##### Solution: Follow the pre-step and install the driver
 
