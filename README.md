@@ -34,7 +34,7 @@ Welcome to rram-programmer, this repo provides all the necessary files in order 
     There are three groups throughout the script: `FLASH`, `EEPROM`, and `External Flash`. Each with the explanation below:
     - `FLASH`: This firmware is for atmel atmega32u2 MCU, which controls the voltage regulator, DAC, external flash ... etc.
     - `EEPROM`: This is not a firmware, but rather some data that are the initial values for some settings, such as for voltage regulator the initial states and values for each voltages, initial values for the DAC outputs ... etc.
-    - `External Flash`: This can be seperated into two categories: "ICSRL RRAM demo suite" and "Cortex M3 demo suite". "ICSRL RRAM demo suite" is essentially the firmware for [rram-pyterminal](https://github.com/muyachang/rram-pyterminal), and "Cortex M3 demo suite" is a set of firmwares that demonstrate basic functionalities of the ARM Cortex M3.
+    - `External Flash`: This can be seperated into two categories: "ICSRL RRAM demo suite" and "Cortex M3 demo suite". "ICSRL RRAM demo suite" is essentially the firmware for [rram-pyterminal](https://muyachang.github.io/rram-pyterminal/), and "Cortex M3 demo suite" is a set of firmwares that demonstrate basic functionalities of the ARM Cortex M3.
 
 - ## Troubleshooting
   - ### Problem 1: dfu-programmer showing "no device present"
